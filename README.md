@@ -1,6 +1,10 @@
 React-TypeScript-Electron sample with Create React App and Electron Builder
 ===========================================================================
 
+> POC Electron WatermelonDB React TS 
+> Good Sync compare to RxDB
+> Bad No sync between window
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) with `--typescript`option.
 
 On the top of it, the following features have been added with realatively small changes:
