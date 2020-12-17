@@ -2,7 +2,17 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import './db/connectDb'
+import sync from './db/sync'
+
 const App: React.FC = () => {
+
+  React.useEffect(() => {
+    (async () => {
+      await sync()
+    })()
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
