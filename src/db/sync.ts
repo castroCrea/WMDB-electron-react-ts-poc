@@ -1,4 +1,3 @@
-/* eslint-disable import/no-anonymous-default-export */
 import { synchronize } from '@nozbe/watermelondb/sync'
 import { database } from './connectDb'
 import { fakeData } from './fakeData'

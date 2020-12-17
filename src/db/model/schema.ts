@@ -12,7 +12,9 @@ export default appSchema({
         { name: 'data', type: 'string', isOptional: true },
         { name: 'type', type: 'string' },
         { name: 'creation_date', type: 'number' },
-        { name: 'last_update', type: 'number' }
+        { name: 'last_update', type: 'number' },
+        { name: 'created_at', type: 'number' },
+        { name: 'updated_at', type: 'number' },
       ]
     }),
     tableSchema({

@@ -1,22 +1,17 @@
+/* eslint-disable import/no-anonymous-default-export */
 import React from 'react';
-import Card from '../../db/model/Card';
+import { Card } from 'src/interface/types';
 import ListItem from './components/ListItem';
 
 type Props = {
   cards: Card[]
 }
 
-export default React.memo(({ cards }: Props) => {
-
-  // React.useEffect(() => {
-
-  // }, [])
-  console.log(cards);
-  // console.log(database.collections.get('cards').query().fetch())
-  return <ul>
-    {cards.map((card: any) => {
-      console.log(card.update)
-      return <ListItem card={card} key={card.id} />
-    })}
-  </ul >
-})
+export default ({ cards }: Props) => {
+  return <div>
+    <ul>
+      {cards.map((card: Card) => <ListItem card={card} key={card.id} />
+      )}
+    </ul >
+  </div>
+}

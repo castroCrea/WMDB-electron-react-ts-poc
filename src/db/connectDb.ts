@@ -2,10 +2,10 @@ import { Database } from '@nozbe/watermelondb'
 import LokiJSAdapter from '@nozbe/watermelondb/adapters/lokijs'
 
 import schema from './model/schema'
-import migrations from './model/migrations'
+import migrations from './migrations'
 import Card from './model/Card'
 import Block from './model/Block'
-import CardBlock from './model/CardBlock'
+import CardBlock from './CardBlock'
 
 // First, create the adapter to the underlying database:
 const adapter = new LokiJSAdapter({
