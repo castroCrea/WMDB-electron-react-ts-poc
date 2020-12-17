@@ -4,7 +4,7 @@ import { field, date, lazy } from '@nozbe/watermelondb/decorators'
 
 const blockAssociation: HasManyAssociation = { type: 'has_many', foreignKey: 'card_id' }
 
-export default class Post extends Model {
+export default class Card extends Model {
   static table = 'cards'
   static associations = {
     card_blocks: blockAssociation

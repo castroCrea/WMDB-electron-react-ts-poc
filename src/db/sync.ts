@@ -10,7 +10,8 @@ export default async (): Promise<void> => {
 
   await synchronize({
     database,
-    pullChanges: async ({ lastPulledAt, schemaVersion, migration }) => {
+    pullChanges: async ({ lastPulledAt }) => {
+      // pullChanges: async ({ lastPulledAt, schemaVersion, migration }) => {
       return fakeData;
 
       // const response = await fetch(`${url}/api/sync/watermelon`, {
@@ -40,6 +41,6 @@ export default async (): Promise<void> => {
       //   throw new Error(await response.text())
       // }
     },
-    migrationsEnabledAtVersion: 1
+    // migrationsEnabledAtVersion: 1
   })
 }
