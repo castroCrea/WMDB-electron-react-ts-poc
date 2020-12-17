@@ -15,8 +15,8 @@ export default class Post extends Model {
   @field('uuid') uuid: unknown
   @field('data') data: unknown
   @field('type') type: unknown
-  @date('created_at') createdAt: unknown
-  @date('updated_at') updatedAt: unknown
+  @date('creation_date') creationDate: unknown
+  @date('last_update') lastUpdate: unknown
   @lazy
   blocks = this.collections
     .get('blocks')

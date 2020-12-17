@@ -12,8 +12,8 @@ export default class Block extends Model {
 
   @field('uuid') uuid: unknown
   @field('data') data: unknown
-  @date('created_at') createdAt: unknown
-  @date('updated_at') updatedAt: unknown
+  @date('creation_date') creationDate: unknown
+  @date('last_update') lastUpdate: unknown
   @lazy
   cards = this.collections
     .get('cards')

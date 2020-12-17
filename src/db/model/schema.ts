@@ -11,8 +11,8 @@ export default appSchema({
         { name: 'content', type: 'string', isOptional: true },
         { name: 'data', type: 'string', isOptional: true },
         { name: 'type', type: 'string' },
-        { name: 'created_at', type: 'number' },
-        { name: 'updated_at', type: 'number' }
+        { name: 'creation_date', type: 'number' },
+        { name: 'last_update', type: 'number' }
       ]
     }),
     tableSchema({
@@ -20,8 +20,8 @@ export default appSchema({
       columns: [
         { name: 'uuid', type: 'string' },
         { name: 'data', type: 'string' },
-        { name: 'created_at', type: 'number' },
-        { name: 'updated_at', type: 'number' }
+        { name: 'creation_date', type: 'number' },
+        { name: 'last_update', type: 'number' }
       ]
     }),
     tableSchema({
